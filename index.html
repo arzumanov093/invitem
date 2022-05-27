@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+
+	<title>A&K</title>
+
+</head>
+
+<body>
+	<div id="page-preloader" class="preloader">
+		<div class="loader">
+			<img src="img/logo.png" alt="">
+		</div>
+	</div>
+
+	<div class="container">
+
+		<header class="header">
+			<img class="header__bg" src="img/bgh.JPG" alt="">
+			<img class="header__logo" src="img/logo.png" alt="">
+		</header>
+
+		<main class="main">
+
+			<div class="main__photo">
+				<img src="img/1.JPG" alt="" id="photo-first">
+				<p class="main__text main__text-first">
+					Дорогие наши родные,
+					<br>
+					близкие и друзья!
+				</p>
+			</div>
+
+			<div class="main__photo">
+				<img src="img/2.JPG" alt="" id="photo-second">
+				<p class="main__text main__text-second">
+					Совсем скоро наступит один из главных дней в нашей жизни - мы станем семьёй!
+					<br> <br>
+					Приглашаем Вас разделить с нами это радостное событие!
+				</p>
+			</div>
+
+			<div class="main__photo">
+				<img src="img/3.JPG" alt="" id="photo-third">
+				<p class="main__text main__text-third">
+					Выездная регистрация и свадебный вечер пройдут в банкетном зале «Bellagio» <br> по адресу: <br>
+					г. Краснодар, ул. Садовая, 1 <br> 30 июля 2022 года в 16:00
+				</p>
+			</div>
+
+			<div class="main__photo" id="photo-fourth">
+				<img src="img/4.JPG" alt="">
+				<p class="main__text main__text-fourth">
+					С уважением, <br> Аркадий и Кристина
+				</p>
+			</div>
+		</main>
+
+		<footer class="timer">
+			<img class="timer__bg" src="img/bgf.JPG" alt="">
+			<div class="timer__content">
+				<h3 class="timer__title">До торжества осталось:</h3>
+				<div class="timer__body">
+					<div class="timer__item">
+						<p class="timer__number" id="days"></p>
+						<p class="timer__text">days</p>
+					</div>
+					<div class="timer__item">
+						<p class="timer__number" id="hours"></p>
+						<p class="timer__text">hours</p>
+					</div>
+					<div class="timer__item">
+						<p class="timer__number" id="minutes"></p>
+						<p class="timer__text">min</p>
+					</div>
+					<div class="timer__item">
+						<p class="timer__number" id="seconds"></p>
+						<p class="timer__text">sec</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<video id="myaudio" autoplay name="media" preload="auto" hidden>
+			<source src="Лезгинка - Май нанак.mp3" type="audio/mp3">
+		</video>
+
+	</div>
+
+	<script>
+		var audio = document.getElementById("myaudio");
+		audio.volume = 0.2;
+	</script>
+
+	<script async src="script.js"></script>
+	<script async src="preloader.js"></script>
+
+</body>
+
+
+
+</html>
