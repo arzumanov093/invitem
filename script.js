@@ -1,4 +1,5 @@
 
+
 var countDownDate = new Date('Jul 30, 2022 16:00:00').getTime();
 
 var countDownFunction = setInterval(() => {
@@ -29,7 +30,33 @@ var countDownFunction = setInterval(() => {
 		timerBody.innerHTML = 'The wedding has begun!';
 		timerBody.style.padding = '7px 0';
 	}
+
+	const audio = document.querySelector('.audio'),
+		play = document.querySelector('.header__logo');
+
+	function playSong() {
+		play.classList.add('play')
+		audio.play();
+	}
+	function pauseSong() {
+		play.classList.remove('play');
+		audio.pause();
+	}
+
+	play.addEventListener('click', () => {
+		const isPlaying = play.classList.contains('play');
+		if (isPlaying) {
+			pauseSong();
+		} else {
+			playSong()
+		}
+
+	})
 }, 1000)
+
+
+
+
 
 
 
